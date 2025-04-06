@@ -1,5 +1,12 @@
 # Aspire & Dev Containers
 
+- [Aspire \& Dev Containers](#aspire--dev-containers)
+  - [What is](#what-is)
+    - [Aspire](#aspire)
+    - [Dev Containers](#dev-containers)
+  - [Demo - Creating a .NET dev container](#demo---creating-a-net-dev-container)
+  - [Demo - .NET Aspire application](#demo---net-aspire-application)
+
 ## What is
 
 ### Aspire
@@ -33,6 +40,8 @@ all in a container for an ethereal development environment.
 
 A development environment is specified using a `.devcontainer/devcontainer.json` file in order to 
 create a Docker or Podman container with a pre-built or custom Dockerfile.
+
+Not that dev containers can largely be used with VS Code or GitHub Codespaces.
 
 ## Demo - Creating a .NET dev container
 
@@ -256,7 +265,7 @@ service discovery, to allow your test to hit endpoints and run test cases agains
   We do this by utilizing `DistributedApplicationTestingBuilder` like so:
 
   ```csharp
-  public class IntegrationTest1
+  public class IntegrationTest
   {
       [Fact]
       public async Task GetWebResourceRootReturnsOkStatusCode()
